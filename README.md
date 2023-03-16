@@ -31,7 +31,7 @@ Because the Treehouse videos use an old version of Rails, there are differences 
 * In the "Deleting Pages" video of the "Rails Routes and Resources" section, when you add the Delete link to the `show` view, paste this in instead:
 
   ```erb
-  <%= link_to 'Delete', @page, data: { 'turbo-method': :delete } %>
+  <%= link_to 'Delete', @page, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
   ```
 
 When you complete Rails Routes and Resources, push your `blog` branch to GitHub, create a pull request, and link it on the assignment submission form that's found on the class page.
